@@ -21,8 +21,8 @@ set script_dir [file dirname [file normalize [info script]]]
 set ::env(DESIGN_NAME) rlbp_macro
 
 set ::env(VERILOG_FILES) "\
-	$::env(CARAVEL_ROOT)/verilog/rtl/defines.v\
-	$script_dir/../../openlane/rlbp/src/rlbp_macro.v"
+	/content/MixPix_Colab/defines.v \
+	/content/conda-env/share/openlane/designs/rlbp/src/rlbp_macro.v"
 
 set ::env(DESIGN_IS_CORE) 0
 

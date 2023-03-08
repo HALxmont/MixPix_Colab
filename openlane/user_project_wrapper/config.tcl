@@ -34,8 +34,8 @@ set ::env(DESIGN_NAME) user_project_wrapper
 
 ## Source Verilog Files
 set ::env(VERILOG_FILES) "\
-	$::env(CARAVEL_ROOT)/verilog/rtl/defines.v \
-	$script_dir/../../verilog/rtl/user_project_wrapper.v"
+	/content/MixPix_Colab/defines.v \
+	/content/MixPix_Colab/rtl/user_project_wrapper.v"
 
 ## Clock configurations
 set ::env(CLOCK_PORT) "wb_clk_i"
