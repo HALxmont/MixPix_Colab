@@ -13,7 +13,6 @@
 # limitations under the License.
 # SPDX-License-Identifier: Apache-2.0
 
-set ::env(PDK) $::env(PDK)
 set ::env(STD_CELL_LIBRARY) "sky130_fd_sc_hd"
 
 set script_dir [file dirname [file normalize [info script]]]
@@ -56,4 +55,7 @@ set ::env(GND_NETS) [list {vssd1}]
 
 set ::env(DIODE_INSERTION_STRATEGY) 4 
 # If you're going to use multiple power domains, then disable cvc run.
-set ::env(RUN_CVC) 1
+set ::env(RUN_CVC) 0
+
+# disable klayout because of https://github.com/hdl/conda-eda/issues/175
+set ::env(RUN_KLAYOUT) 0

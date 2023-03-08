@@ -16,7 +16,6 @@
 # Base Configurations. Don't Touch
 # section begin
 
-set ::env(PDK) $::env(PDK)
 set ::env(STD_CELL_LIBRARY) "sky130_fd_sc_hd"
 
 # YOU ARE NOT ALLOWED TO CHANGE ANY VARIABLES DEFINED IN THE FIXED WRAPPER CFGS 
@@ -55,7 +54,7 @@ set ::env(FP_PDN_MACRO_HOOKS) "\
 
 
 ### Macro Placement
-set ::env(MACRO_PLACEMENT_CFG) $script_dir/macro.cfg
+set ::env(MACRO_PLACEMENT_CFG) /content/conda-env/share/openlane/designs/user_project_wrapper/macro.cfg
 
 ### Black-box verilog and views
 set ::env(VERILOG_FILES_BLACKBOX) "\
