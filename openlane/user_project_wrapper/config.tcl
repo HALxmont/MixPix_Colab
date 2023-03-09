@@ -86,7 +86,7 @@ set ::env(RT_MAX_LAYER) {met4}
 set ::env(FP_PDN_CHECK_NODES) 0
 
 # The following is because there are no std cells in the example wrapper project.
-set ::env(SYNTH_TOP_LEVEL) 1
+set ::env(SYNTH_ELABORATE_ONLY) 1
 set ::env(PL_RANDOM_GLB_PLACEMENT) 1
 
 set ::env(PL_RESIZER_DESIGN_OPTIMIZATIONS) 0
@@ -97,8 +97,8 @@ set ::env(PL_RESIZER_BUFFER_OUTPUT_PORTS) 0
 set ::env(FP_PDN_ENABLE_RAILS) 0
 
 set ::env(DIODE_INSERTION_STRATEGY) 0
-set ::env(FILL_INSERTION) 0
-set ::env(TAP_DECAP_INSERTION) 0
+set ::env(RUN_FILL_INSERTION) 0
+set ::env(RUN_TAP_DECAP_INSERTION) 0
 set ::env(CLOCK_TREE_SYNTH) 0
 
 
@@ -109,5 +109,8 @@ set ::env(DRT_OPT_ITERS) 64
 set ::env(ROUTING_CORES) 4
 
 ## Ignorar congestión
-set ::env(GLB_RT_ALLOW_CONGESTION) 1
+set ::env(GRT_ALLOW_CONGESTION) 1
+
+# disable klayout because of https://github.com/hdl/conda-eda/issues/175
+set ::env(RUN_KLAYOUT) 0
 
