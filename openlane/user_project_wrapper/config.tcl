@@ -51,12 +51,13 @@ set ::env(FP_PDN_MACRO_HOOKS) "\
 	sl_macro0 vdda1 vssa1 VDD VSS"
 
 
+
 ### Macro Placement
 set ::env(MACRO_PLACEMENT_CFG) /content/conda-env/share/openlane/designs/user_project_wrapper/macro.cfg
 
 ### Black-box verilog and views
 set ::env(VERILOG_FILES_BLACKBOX) "\
-	$::env(CARAVEL_ROOT)/verilog/rtl/defines.v \
+	/content/MixPix_Colab/defines.v \
 	/content/MixPix_Colab/openlane/rlbp/src/rlbp_macro.v \
 	/content/MixPix_Colab/openlane/rlbp/src/rlbp.v \
 	/content/MixPix_Colab/openlane/PD_M1_M2/src/PD_M1_M2.v \

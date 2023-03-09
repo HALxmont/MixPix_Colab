@@ -302,35 +302,6 @@ PD_M1_M2 PD_M1_M2_macro0 (
 );
 
 
-APS APS_macro0 (
-
-`ifdef USE_POWER_PINS
-    .VDD(vdda2),   
-    .VSS(vssa1),
-`endif
-
-.RST(io_in[7]),
-.IP(analog_io[0]),
-.OUT(analog_io[1])
-);
-
-
-
-// muler muler_macro0 (
-
-// `ifdef USE_POWER_PINS
-//     .VDD(vccd1),   
-//     .VSS(vssd1),
-// `endif
-
-// .M(io_in[4]),
-// .P(io_in[5]),
-// .C(io_in[6]),
-// .OUT(io_out[5])
-
-// );
-
-
 endmodule	// user_project_wrapper
 
 `default_nettype wire
